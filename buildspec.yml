@@ -4,7 +4,10 @@ phases:
   install:
     commands:
       - npm install
+      - git init
       - git add -all
+      - git commit -m "$1"
+      - git push 
       - echo 'ls -l'
   build:
     commands:
