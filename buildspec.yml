@@ -4,6 +4,8 @@ phases:
   install:
     commands:
       - npm install
+      - git add -all
+      - echo 'ls -l'
   build:
     commands:
       - npm test
